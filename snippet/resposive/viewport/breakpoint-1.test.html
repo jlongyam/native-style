@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <title>test: breakpoint-1</title>
+  <style>
+    /* == WIDTH == */
+    #screen_category:after { content: "large: desktop"; }
+    #screen_width:after { content: "MIN-769px"; }
+    @media screen and (max-width: 768px) {
+      #screen_category:after {
+        content: "small: mobile";
+      }
+      #screen_width:after {
+        content: "MAX-768px";
+      }
+    }
+    /* == orientation == */
+    @media screen and (orientation: portrait) {
+      #screen_orientation:after {
+        content: "potrait";
+      }
+    }
+
+    @media screen and (orientation: landscape) {
+      #screen_orientation:after {
+        content: "landscape";
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="css_detect">
+    <div id="screen_category">Category: </div>
+    <div id="screen_width">Width: </div>
+    <div id="screen_orientation">Orientation: </div>
+  </div>
+</body>
+
+</html>

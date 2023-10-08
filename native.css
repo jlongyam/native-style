@@ -1,0 +1,6 @@
+@import "lib/sanitize.css";
+html {
+  /* handle icon-font & emoji */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

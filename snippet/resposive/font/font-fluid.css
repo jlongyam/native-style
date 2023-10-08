@@ -1,0 +1,11 @@
+@media screen and (max-width: 320px) { :root { --font-fluid: 16px; } }
+@media screen and (min-width: 321px) and (max-width: 375px) { :root { --font-fluid: 18px; } }
+@media screen and (min-width: 376px) and (max-width: 425px) { :root { --font-fluid: 19px; } }
+@media screen and (min-width: 426px) and (max-width: 768px) { :root { --font-fluid: 20px; } }
+@media screen and (min-width: 769px) and (max-width: 1024px) { :root { --font-fluid: 21px; } }
+@media screen and (min-width: 1025px) and (max-width: 1440px) { :root { --font-fluid: 22px; } }
+@media screen and (min-width: 1441px) { :root { --font-fluid: 23px; } }
+.font-fluid {
+  font-size: var(--font-fluid);
+}
+/* <div class="font-fluid"></div> */

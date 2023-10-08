@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <title>test: responsive browser</title>
+  <style>
+    .browser {
+      display: none;
+    }
+
+    @supports (-moz-appearance:none) {
+      .browser.moz {
+        display: inline-block;
+      }
+    }
+
+    @supports (-webkit-font-smoothing: antialiased) {
+      .browser.webkit {
+        display: inline-block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Test browser engine</h1>
+  <p>Current engine :</p>
+  <div class="browser moz">
+    <h2>MOZ</h2>
+  </div>
+  <div class="browser webkit">
+    <h2>WEBKIT</h2>
+  </div>
+</body>
+
+</html>
