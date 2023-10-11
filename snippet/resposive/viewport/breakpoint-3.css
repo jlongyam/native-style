@@ -1,0 +1,4 @@
+/* == breakpoint-3 == */
+@media screen and (max-width: 425px) {}
+@media screen and (min-width: 426px) and (max-width: 768px) {}
+@media screen and (min-width: 769px) {}
