@@ -1,0 +1,4 @@
+*,*::before,*::after {
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+}

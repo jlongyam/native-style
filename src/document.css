@@ -1,0 +1,30 @@
+@import "root.css";
+@import "all.css";
+
+html {
+  /* handle icon-font & emoji */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* fix background-color on android webview */
+  background-color: gray;
+  /* fix layout*/
+  height: 100%;
+}
+/*
+  display
+  box-sizing
+  position
+  overflow
+  margin-padding
+  font
+  color
+*/
+body {
+  margin: 2.5%;
+  /* fix background-color on android webview */
+  background-color: white;
+  color: black;
+  /* continue scroll */
+  /* overflow: hidden; */
+  padding: 2.5%;
+}

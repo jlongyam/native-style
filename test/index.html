@@ -1,13 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>blank</title>
+  <meta charset="utf-8">
+	<meta http-equiv="content-type" content="text/html">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+  <title>test</title>
+  <script src="../lib/forEach.min.js"></script>
+  <script src="../lib/createElement.min.js"></script>
+  <script src="../lib/router.min.js"></script>
 </head>
 <body>
 <script>
+const TOC = {
+  reset: 'index.html',
+  document: '#/document/',
+  table: '#/table/',
+  list: '#/list/'
+}
+let ul = createElement('ul')
+TOC.forEach( (val, key )=> {
+  let li = createElement('li')
+  let a = createElement('a', { href: val, textContent: key })
+  li.appendChild(a)
+  ul.appendChild(li)
+})
+document.body.appendChild(ul)
+// document.documentElement.innerHTML = '<h1>Hello</h1>'
+// document.currentScript.parentElement.removeChild( document.currentScript )
 
-document.documentElement.innerHTML = '<h1>Hello</h1>'
-document.currentScript.parentElement.removeChild( document.currentScript )
 </script>
 </body>
 </html>
