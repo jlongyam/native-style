@@ -1,6 +1,10 @@
 # [native-style](https://github.com/jlongyam/native-style)
 
-Under development
+Browser native styles
+
+## Depedencies
+
+- [destyle.css](https://github.com/nicolas-cusan/destyle.css)
 
 ## Reference
 
