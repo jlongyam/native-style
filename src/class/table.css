@@ -1,0 +1,20 @@
+:root {
+  --table-border: 1px solid silver;
+}
+/* <table class="border"> */
+table.border td,
+table.border th {
+  border: var(--table-border)
+}
+/* <table class="scrollable"> */
+table.scrollable {
+  display: inline-block;
+  overflow-x: auto;
+  margin: var(--margin-section);
+  vertical-align: bottom;
+}
+/* <table class="fluid"> */
+/* incompatible with scrollable */
+table.fluid {
+  min-width: 100%;
+}

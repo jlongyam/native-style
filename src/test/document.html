@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
   <title>test: document</title>
   <link rel="stylesheet" href="../../lib/config-box.min.css">
+  <link rel="stylesheet" href="../demo.css">
   <link id="link_reset_destyle" rel="stylesheet" href="../../lib/reset/destyle.css">
   <link id="link_reset_acab" rel="stylesheet" href="../../lib/reset/acab.css">
   <link id="link_sanitize" rel="stylesheet" href="../../lib/sanitize/sanitize.css">
@@ -22,10 +23,16 @@
   <script src="../../lib/config-box.min.js"></script>
 </head>
 <body>
-  <div data-random-paragraph="25" id="div"></div>
+  <div class="demo-title">div+span</div>
+  <div class="demo-example">
+    <div><span data-random-word="10"></span></div>
+    <div data-random-paragraph="1"></div>
+  </div>
+  
   <script>
     let config_box = new ConfigBox('Config CSS:')
     config_box.start()
+    config_box.createText('class-less:')
     let config_choose = new ConfigChoose(config_box.body)
     config_choose.create({
       'reset_destyle': true,

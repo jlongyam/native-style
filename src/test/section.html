@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
   <title>test: section</title>
   <link rel="stylesheet" href="../../lib/config-box.min.css">
+  <link rel="stylesheet" href="../demo.css">
   <link id="link_reset_destyle" rel="stylesheet" href="../../lib/reset/destyle.css">
   <link id="link_reset_acab" rel="stylesheet" href="../../lib/reset/acab.css">
   <link id="link_sanitize" rel="stylesheet" href="../../lib/sanitize/sanitize.css">
@@ -23,17 +25,32 @@
   <script src="../../lib/selector.min.js"></script>
   <script src="../../lib/config-box.min.js"></script>
 </head>
+
 <body>
-  <section>
-    <main>
-      <p data-random-paragraph="2"></p>
-      <hr id="hr">
-      <p data-random-paragraph="2"></p>
-    </main>
-  </section>
+  <div class="demo-title">hr</div>
+  <div class="demo-example">
+    <div class="demo-block" data-random-paragraph="1"></div>
+    <hr id="hr">
+    <div class="demo-block" data-random-paragraph="1"></div>
+  </div>
+  <div class="demo-title">br</div>
+  <div class="demo-example">
+    <div class="demo-block" data-random-paragraph="1"></div>
+    <br>
+    <div class="demo-block" data-random-paragraph="1"></div>
+  </div>
+  <div class="demo-title">hgroup</div>
+  <div class="demo-example">
+    <hgroup>
+      <h1 data-random-sentence="1"></h1>
+      <p data-random-paragraph="1"></p>
+    </hgroup>
+  </div>
+
   <script>
     let config_box = new ConfigBox('Config CSS:')
     config_box.start()
+    config_box.createText('class-less:')
     let config_choose = new ConfigChoose(config_box.body)
     config_choose.create({
       'reset_destyle': true,
@@ -46,20 +63,21 @@
       'sanitize_page': false,
       'document': true,
       'section': true
-    }, (item, active)=> {
-      $('#link_'+item).toggleAttribute('disabled')
+    }, (item, active) => {
+      $('#link_' + item).toggleAttribute('disabled')
     })
-    config_box.createText('class:')
-    config_choose.create({ 'hr.section': false }, ( item, active )=> {
+    config_box.createText('classes:')
+    config_choose.create({ 'hr.section': false }, (item, active) => {
       let
         items = item.split('.'),
         item_link = items[0],
         item_class = items[1]
         ;
-      $('#link_class_'+item_link).toggleAttribute('disabled')
-      $('#'+item_link).classList.toggle(item_class)
+      $('#link_class_' + item_link).toggleAttribute('disabled')
+      $('#' + item_link).classList.toggle(item_class)
     })
     config_box.setPosition({ left: 'auto', top: '3em', right: '3em' })
   </script>
 </body>
+
 </html>

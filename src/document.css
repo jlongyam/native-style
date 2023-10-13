@@ -1,3 +1,7 @@
+@import "reset.css";
+@import "fix.css";
+@import "root.css";
+
 html {
   background-color: gray; /* fix background-color on android webview */
   height: 100%; /* fix layout */
