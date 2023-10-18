@@ -1,4 +1,0 @@
-/* == Mozilla Firefox == */
-@supports (-moz-appearance:none) {}
-/* == Webkit and Blink == */
-@supports (-webkit-font-smoothing: antialiased) {}
