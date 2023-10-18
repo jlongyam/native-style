@@ -2,7 +2,7 @@
 
 Browser native styles
 
-[demo](https://jlongyam.github.io/native-style/native-style.test.html)
+[demo](https://jlongyam.github.io/native-style/src/native-style.test.html)
 
 ## Reference
 
