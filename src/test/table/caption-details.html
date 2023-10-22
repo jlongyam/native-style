@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+  <title>test: caption details</title>
+  <link rel="stylesheet" href="../../native-style.css">
+  <script src="../../../lib/loader.min.js"></script>
+  <script src="init.js"></script>
+</head>
+
+<body>
+  <table>
+    <caption>
+      <strong>Characteristics with positive and negative sides.</strong>
+      <details>
+        <summary>Help</summary>
+        <p>Characteristics are given in the second column, with the
+          negative side in the left column and the positive side in the right
+          column.</p>
+      </details>
+    </caption>
+    <thead>
+      <tr>
+        <th id="n"> Negative
+        <th> Characteristic
+        <th> Positive
+    <tbody>
+      <tr>
+        <td headers="n r1"> Sad
+        <th id="r1"> Mood
+        <td> Happy
+      <tr>
+        <td headers="n r2"> Failing
+        <th id="r2"> Grade
+        <td> Passing
+  </table>
+  <script src="config.js"></script>
+</body>
+
+</html>

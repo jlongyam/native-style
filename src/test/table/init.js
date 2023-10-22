@@ -1,1 +1,12 @@
-loadWrite(['../../../lib/createElement.min.js'])
+loadCSS([
+  '../../class/table/table.css',
+  '../../../lib/config-box.min.css',
+  '../../../lib/config-box-debug.min.css'
+])
+loadWrite([
+  '../../../lib/forEach.min.js',
+  '../../../lib/selector.min.js',
+  '../../../lib/random-lib.min.js',
+  '../../../lib/dragMouse.min.js',
+  '../../../lib/config-box.min.js'
+])

@@ -6,3 +6,7 @@ Browser native styles
 
 - [developer.mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 - [html.spec.whatwg.org](https://html.spec.whatwg.org/multipage/)
+
+## Tools
+
+- https://fakeimg.pl/
