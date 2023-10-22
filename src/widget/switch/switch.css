@@ -1,0 +1,16 @@
+:root {
+  --switch-target_display: block;
+}
+
+.switch-checkbox,
+.switch-radio,
+.switch-target {
+  display: none;
+}
+.switch-checkbox:checked+.switch-target,
+.switch-radio:checked+.switch-target,
+.switch-target:target,
+.switch-focus:focus+.switch-target,
+.switch-hover:hover+.switch-target {
+  display: var(--switch-target_display);
+}
