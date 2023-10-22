@@ -1,8 +1,0 @@
-/* require root.css, text-block.css */
-/*
-- hr
-- hgroup
-*/
-hr {
-  margin: var(--margin-section)
-}

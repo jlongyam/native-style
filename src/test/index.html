@@ -4,8 +4,35 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
   <title>Test: native-style</title>
+  <link rel="stylesheet" href="../native-style.css">
+  <link rel="stylesheet" href="../widget/box/box.css">
+  <link rel="stylesheet" href="../widget/switch/switch.css">
+  <script src="../../lib/random-lib.min.js"></script>
 </head>
 <body>
-  
+  <div class="box">
+    <hgroup>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+    </hgroup>
+    
+  </div>
+  <div class="box">
+
+  </div>
+  <header data-random-font="true">
+    <h1>Test <code></code></h1>
+    <p>This is paragraph inside header</p>
+  </header>
+  <main>
+    <section data-random-font="true">
+      <h2>First main section</h2>
+      <p data-random-paragraph="2"></p>
+    </section>
+    <section>
+      <h2>Section <code>#2</code></h2>
+      <pre data-random-paragraph="1"></pre>
+    </section>
+  </main>
 </body>
 </html>

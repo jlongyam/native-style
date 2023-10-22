@@ -1,16 +1,23 @@
-:root {
-  --switch-target_display: block;
-}
-
 .switch-checkbox,
-.switch-radio,
-.switch-target {
+.switch-radio {
   display: none;
+}
+.switch-target {
+  visibility: hidden;
+  height: 0;
+  width: 0;
 }
 .switch-checkbox:checked+.switch-target,
 .switch-radio:checked+.switch-target,
 .switch-target:target,
 .switch-focus:focus+.switch-target,
+.switch-focus:focus>.switch-target,
 .switch-hover:hover+.switch-target {
-  display: var(--switch-target_display);
+  visibility: visible;
+  width: initial;
+  height: initial;
+}
+a.switch-focus {
+  text-decoration: none;
+  color: currentColor;
 }
